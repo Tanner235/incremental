@@ -29,6 +29,15 @@ function autoUpgrade() {
   }
 }
 
+function tab(tab) {
+  // hide all your tabs, then show the one the user selected.
+  document.getElementById("mineGoldMenu").style.display = "none"
+  document.getElementById("shopMenu").style.display = "none"
+  document.getElementById(tab).style.display = "inline-block"
+}
+// go to a tab for the first time, so not all show
+tab("mineGoldMenu")
+
 function hardReset() {
   gameData.gold += 100000
 }
