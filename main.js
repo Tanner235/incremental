@@ -2,7 +2,6 @@ var gameData = {
   gold: 0,
   goldPerClick: 1,
   goldPerClickCost: 10,
-  autoUpgrade: 0
 }
 function mineGold() {
   gameData.gold +=
@@ -17,15 +16,6 @@ function buyGoldPerClick() {
     gameData.goldPerClickCost *= 2
     document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
     document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.goldPerClick + ") Cost: " + gameData.goldPerClickCost + " Gold"
-  }
-}
-
-function autoUpgrade() {
-  if (gameData.autoUpgrade = 1){
-    gameData.gold -= 1000
-    var mainGameLoop = window.setInterval(function() {
-      mineGold()
-    }, 1000)
   }
 }
 
