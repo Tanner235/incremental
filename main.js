@@ -28,6 +28,7 @@ function tab(tab) {
 // go to a tab for the first time, so not all show
 tab("mineGoldMenu")
 
+// will run a loop constantly updating gold count mostly used on startup
 var mainGameLoop = window.setInterval(function() {
   document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
 }, 200)
