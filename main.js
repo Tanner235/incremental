@@ -28,9 +28,10 @@ function tab(tab) {
 // go to a tab for the first time, so not all show
 tab("mineGoldMenu")
 
-// will run a loop constantly updating gold count mostly used on startup
+// will run a loop constantly updating values mostly used on startup
 var mainGameLoop = window.setInterval(function() {
   document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+  document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.goldPerClick + ") Cost: " + gameData.goldPerClickCost + " Gold"
 }, 200)
 
 function hardReset() {
