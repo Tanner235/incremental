@@ -28,6 +28,10 @@ function tab(tab) {
 // go to a tab for the first time, so not all show
 tab("mineGoldMenu")
 
+var mainGameLoop = window.setInterval(function() {
+  document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+}, 1000)
+
 function hardReset() {
   gameData.gold += 100000
 }
