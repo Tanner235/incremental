@@ -29,6 +29,11 @@ function autoUpgrade() {
   }
 }
 
+function mineGold() {
+  gameData.gold +=
+document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+}
+
 var saveGameLoop = window.setInterval(function() {
   localStorage.setItem('goldMinerSave', JSON.stringify(gameData))
 }, 15000)
