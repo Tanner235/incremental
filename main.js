@@ -31,7 +31,6 @@ function autoUpgrade() {
 
 function hardReset() {
   gameData.gold = 0
-document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
 }
 
 var saveGameLoop = window.setInterval(function() {
