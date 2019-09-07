@@ -1,7 +1,7 @@
-.button {
+ .button {
    background: hsl(0, 0%, 85%);
    border: none;
    border-radius: 3px;
    cursor: pointer;
    padding: 0.33rem 0.75rem;
- } 
+ }
