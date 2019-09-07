@@ -37,3 +37,22 @@ var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
 if (savegame !== null) {
   gameData = savegame
 }
+
+function removeSaveData () { localStorage.removeItem('savedata') };
+
+function resetUnit (unit) { time[unit] = deepCopy(timeDefault[unit]) };
+
+function resetGame () {
+	if (confirm('Are you sure you want to reset all progress?')) {
+		removeSaveData();
+		initialize();
+	};
+};
+
+function exportGame() {
+  prompt('Save:', btoa(JSON.stringify(time)));
+}
+
+function importGame() {
+  Object.assign(time,JSON.parse(atob(prompt('Put save here (WILL OVERWRITE CURRENT SAVE):'))))
+}
