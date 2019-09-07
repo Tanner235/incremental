@@ -31,7 +31,6 @@ tab("mineGoldMenu")
 // will run a loop constantly updating values mostly used on startup
 var mainGameLoop = window.setInterval(function() {
   document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
-  document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.goldPerClick + ") Cost: " + gameData.goldPerClickCost + " Gold"
 }, 200)
 
 function hardReset() {
