@@ -29,6 +29,10 @@ function autoUpgrade() {
   }
 }
 
+function hardReset() {
+  gameData.gold += 100000
+}
+
 var saveGameLoop = window.setInterval(function() {
   localStorage.setItem('goldMinerSave', JSON.stringify(gameData))
 }, 15000)
