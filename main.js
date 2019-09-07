@@ -29,8 +29,8 @@ function autoUpgrade() {
   }
 }
 
-function mineGold() {
-  gameData.gold +=
+function hardReset() {
+  gameData.gold = 0
 document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
 }
 
