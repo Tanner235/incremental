@@ -30,7 +30,7 @@ tab("mineGoldMenu")
 
 var mainGameLoop = window.setInterval(function() {
   document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
-}, 1000)
+}, 200)
 
 function hardReset() {
   gameData.gold += 100000
