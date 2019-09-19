@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <p id="woodMined" class="resources">0 Wood Mined</p>
+    <p id="woodMined" class="resources">Wood: 0</p>
+    <p id="cobblestoneMined" class="resources">Cobblestone: 0</p>
     <div id="navigateButtons">
       <button onclick="tab('mineWoodMenu')">Go to Mine Wood</button>
       <button onclick="tab('shopMenu')">Go to Shop</button>
@@ -14,6 +15,7 @@
     </div>
     <div id="mineWoodMenu">
       <button onclick="mineWood()">Mine Wood</button>
+      <button onclick="mineCobblestone()">Mine Cobblestone</button>
     </div>
     <div id="shopMenu">
       <button onclick="buyWoodPerClick()" id="perClickUpgrade">Upgrade Pickaxe (Currently Level 1) Cost: 10 Wood</button>
