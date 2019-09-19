@@ -1,47 +1,47 @@
 var gameData = {
-  gold: 0,
-  goldPerClick: 1,
-  goldPerClickCost: 10,
+  wood: 0,
+  woodPerClick: 1,
+  woodPerClickCost: 10,
 }
-function mineGold() {
-  gameData.gold +=
-gameData.goldPerClick
-document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+function mineWood() {
+  gameData.wood +=
+gameData.woodPerClick
+document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
 }
 
-function buyGoldPerClick() {
-  if (gameData.gold >= gameData.goldPerClickCost) {
-    gameData.gold -= gameData.goldPerClickCost
-    gameData.goldPerClick += 1
-    gameData.goldPerClickCost *= 2
-    document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
-    document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.goldPerClick + ") Cost: " + gameData.goldPerClickCost + " Gold"
+function buyWoodPerClick() {
+  if (gameData.wood >= gameData.woodPerClickCost) {
+    gameData.wood -= gameData.woodPerClickCost
+    gameData.woodPerClick += 1
+    gameData.woodPerClickCost *= 2
+    document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
+    document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.woodPerClick + ") Cost: " + gameData.woodPerClickCost + " Wood"
   }
 }
 
 function tab(tab) {
   // hide all your tabs, then show the one the user selected.
-  document.getElementById("mineGoldMenu").style.display = "none"
+  document.getElementById("mineWoodMenu").style.display = "none"
   document.getElementById("shopMenu").style.display = "none"
   document.getElementById(tab).style.display = "inline-block"
 }
 // go to a tab for the first time, so not all show
-tab("mineGoldMenu")
+tab("mineWoodMenu")
 
 // will run a loop constantly updating values mostly used on startup
 var mainGameLoop = window.setInterval(function() {
-  document.getElementById("goldMined").innerHTML = gameData.gold + " Gold Mined"
+  document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
 }, 200)
 
 function hardReset() {
-  gameData.gold += 100000
+  gameData.wood += 100000
 }
 
 var saveGameLoop = window.setInterval(function() {
-  localStorage.setItem('goldMinerSave', JSON.stringify(gameData))
+  localStorage.setItem('woodMinerSave', JSON.stringify(gameData))
 }, 15000)
 
-var savegame = JSON.parse(localStorage.getItem("goldMinerSave"))
+var savegame = JSON.parse(localStorage.getItem("woodMinerSave"))
 if (savegame !== null) {
   gameData = savegame
 }
