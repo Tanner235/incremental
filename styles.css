@@ -3,7 +3,7 @@
  }
 
  body { /* no . means element type */
-   background: black;
+   background-color: black;
    text-align: center; /* text-align centers text AND children */
  }
 
