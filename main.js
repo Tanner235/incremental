@@ -13,7 +13,7 @@ document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
 function mineCobblestone() {
   gameData.cobblestone +=
 gameData.cobblestonePerClick
-document.getElementById("cobblestoneMined").innerHTML = gameData.cobblestone + " Cobblestone:"
+document.getElementById("cobblestoneMined").innerHTML = gameData.cobblestone + " Cobblestone Mined"
 }
 
 function buyWoodPerClick() {
