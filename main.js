@@ -39,6 +39,7 @@ tab("mineWoodMenu")
 // will run a loop constantly updating values mostly used on startup
 var mainGameLoop = window.setInterval(function() {
   document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
+  document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Wood Mined"
 }, 200)
 
 function hardReset() {
