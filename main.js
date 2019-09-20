@@ -2,7 +2,7 @@ var gameData = {
   wood: 0,
   woodPerClick: 1,
   woodPerClickCost: 10,
-  cobble: 0,
+  cobble: 2,
   cobblePerClick: 1,
 }
 function mineWood() {
