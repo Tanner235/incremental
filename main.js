@@ -1,6 +1,7 @@
 var gameData = {
   wood: 0,
   cobble: 0,
+  cobblePerClick: 1,
   woodPerClick: 1,
   woodPerClickCost: 10,
 }
