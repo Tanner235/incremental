@@ -10,16 +10,10 @@ gameData.woodPerClick
 document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
 }
 
-// function mineCobble() {
-//   gameData.cobble +=
-// gameData.cobblePerClick
-// document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Cobblestone Mined"
-// }
-
 function mineCobble() {
   gameData.cobble +=
 gameData.cobblePerClick
-document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Cobble Mined"
+document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Cobblestone Mined"
 }
 
 function buyWoodPerClick() {
