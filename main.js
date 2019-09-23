@@ -34,7 +34,7 @@ function tab(tab) {
   document.getElementById(tab).style.display = "inline-block"
 }
 // go to a tab for the first time, so not all show
-tab("mineWoodMenu")
+tab("harvestMenu")
 
 // will run a loop constantly updating values mostly used on startup
 var mainGameLoop = window.setInterval(function() {
