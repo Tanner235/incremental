@@ -29,7 +29,7 @@ function buyWoodPerClick() {
 
 function tab(tab) {
   // hide all your tabs, then show the one the user selected.
-  document.getElementById("mineWoodMenu").style.display = "none"
+  document.getElementById("harvestMenu").style.display = "none"
   document.getElementById("shopMenu").style.display = "none"
   document.getElementById(tab).style.display = "inline-block"
 }
