@@ -8,13 +8,13 @@ var gameData = {
 function mineWood() {
   gameData.wood +=
 gameData.woodPerClick
-document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
+document.getElementById("woodMined").innerHTML = gameData.wood + " Wood"
 }
 
 function mineCobble() {
   gameData.cobble +=
 gameData.cobblePerClick
-document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Cobblestone Mined"
+document.getElementById("cobbleMined").innerHTML = gameData.cobble + " Cobblestone"
 }
 
 function buyWoodPerClick() {
@@ -22,7 +22,7 @@ function buyWoodPerClick() {
     gameData.wood -= gameData.woodPerClickCost
     gameData.woodPerClick += 1
     gameData.woodPerClickCost *= 2
-    document.getElementById("woodMined").innerHTML = gameData.wood + " Wood Mined"
+    document.getElementById("woodMined").innerHTML = gameData.wood + " Wood"
     document.getElementById("perClickUpgrade").innerHTML = "Upgrade Pickaxe (Currently Level " + gameData.woodPerClick + ") Cost: " + gameData.woodPerClickCost + " Wood"
   }
 }
